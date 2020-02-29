@@ -1,6 +1,5 @@
 const BaseController = require('../base').BaseController;
 const UserHandler = require('./user.handler');
-// const util = require('util');
 
 class UserController extends BaseController{
     constructor(){
@@ -10,8 +9,6 @@ class UserController extends BaseController{
 
     }
     getUserInfo(req, res , next){
-        //let responseManager = this._responseManager;
-        //let that = this;
         this.authenticate(req, res, next, (token, user)=>{
             this._userHandler.getUserInfo(req, user, this._responseManager.getDefaultResponseHandler(res));
         });

@@ -1,5 +1,5 @@
 module.exports ={
-    issuer : "api@careekitool.com",
-    audience: "api.careerkitool.com",
+    issuer : "api@restserver.com",
+    audience: "api.restserver.com",
     algorithm: "RS256"
 }

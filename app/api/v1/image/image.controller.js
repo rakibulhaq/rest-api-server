@@ -10,10 +10,6 @@ class ImageController extends BaseController {
     
     upload(req, res, next) {
         this._ImageHandler.uploadImage(req, this._responseManager.getDefaultResponseHandler(res));
-        // this.authenticate(req, res, next, () => {
-           
-        // });
-
     }
     remove(req, res, next) {
         this._ImageHandler.deleteImage(req, this._responseManager.getDefaultResponseHandler(res));

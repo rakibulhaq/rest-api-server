@@ -33,12 +33,12 @@ class AuthManager extends BaseAutoBindedClass{
     }
     _provideJwtSecretKey(){
         let fs = require('fs');
-        return fs.readFileSync(CONFIG_BASE_PATH + 'secret/jwt-key.pem', 'utf8');
+        return fs.readFileSync(CONFIG_BASE_PATH + 'secret/jwt-pem.key', 'utf8');
 
     }
     _provideJwtPublicKey(){
         let fs = require('fs');
-        return fs.readFileSync(CONFIG_BASE_PATH + 'secret/jwt-key.pub', 'utf8');
+        return fs.readFileSync(CONFIG_BASE_PATH + 'secret/jwt-pub.key', 'utf8');
 
     }
     _provideJwtOptions(){

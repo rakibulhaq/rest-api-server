@@ -16,17 +16,6 @@ class ImageHandler {
         else{
             callback.onError(error);
         }
-
-        // return new Promise((resolve, reject) => {
-            
-        // })
-        //     .then((saved) => {
-                
-        //     })
-        //     .catch((error) => {
-                
-        //     });
-
     }
     deleteImage(req, callback) {
         req.checkParams('id', 'Invalid Id provided').isMongoId();

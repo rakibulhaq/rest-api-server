@@ -1,5 +1,5 @@
 /**
- * Api: for careerki tool 
+ * Api: express, mongoose, jwt
  * entry point for the api service
  */
 global.APP_ROOT_PATH = __dirname + '/app/';

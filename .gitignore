@@ -1,3 +1,2 @@
 node_modules/
-config/secret/
-package-lock.json
+config/secret/*
